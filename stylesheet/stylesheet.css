@@ -1,0 +1,256 @@
+/* BODY */
+body {
+	height: 100%;
+	font-size: 12px;
+}
+
+.main-container, #content {
+	height: 100%;
+}
+
+/* NAV CONTAINER */
+.nav-header {
+	margin-left:5%;
+	border-bottom: 1px solid #f4f4f4;
+    box-shadow: 0 0 5px 0px grey;
+}
+
+.nav-inner {
+	height: 3em;
+}
+
+.page-header {
+/*	height: 20%;*/
+/*	padding: 0.01em 1em;*/
+}
+
+.header-icons {
+	float: right;
+    padding: 1em 0 0 0;
+}
+
+.fa-bell, .fa-user {
+	padding-right: 2em;
+	color: #8f8f8f;
+}
+
+/* SIDEBAR */
+
+.w3-sidebar {
+	width:5%;
+	border-right: 1px solid #eee;
+    box-shadow: 0 0 5px 0 grey;
+	overflow: hidden;
+}
+
+.categories {
+	list-style: none;
+	position: relative;
+    right: 1.8em;
+}
+
+.category-item {
+	margin-top: 1.5em;
+}
+
+.category-item-settings {
+	position: absolute;
+    bottom: -18em;
+}
+
+.round-button {
+    display:block;
+    width:2.5em;
+    height:2.5em;
+    line-height:8em;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #f1f1f1;
+    box-shadow: 0 0 3px gray;
+/*    font-size:20px;*/
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #27AE5F;
+}
+
+
+/* MAIN SECTION FIRST PAGE */
+.bg-img {
+  width: 100%;
+  height: 53.1em;
+  background: url('../images/people-coffee-tea-meeting.jpg') no-repeat;
+  background-size: cover;
+}
+
+.image {
+	position: relative;
+    width:100%;
+    height:100%;
+}
+
+/* css overlay color*/
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(35,103,170,0.8);
+    opacity:1;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.welcome-msg {
+	padding: 20.1%;
+}
+
+
+/* SPEEDBOT HELP */
+
+.slidingDiv {
+	width: 19%;
+	position: absolute;
+	top:0;
+	right: 0;
+    height:100%;
+    background-color: #fff;
+    padding-top: 1%;
+}
+
+.show_hide {
+    display:none;
+	float: right;
+	position: absolute;
+    top: 8%;
+    right: 6%;
+    color: #f1f1f1;
+}
+
+.speed-bot_icons {
+	padding-right: 5%;
+}
+
+.chat-space {
+	position: absolute;
+    bottom: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 4em;
+}
+
+.chat-space_emoji {
+	margin-top: 7%;
+    margin-left: 8%;
+}
+
+.chat-space_text {
+	padding-left: 3%;
+}
+    
+.chat-space_right-arrow {
+	margin-top: 7%;
+    float: right;
+    margin-right: 8%;
+}
+
+/* SPEED CONTAINER*/
+
+ .speed-container, .bot-container {
+	height: 50em;
+    background-color: #f1f1f1;
+	margin-left: 5%;
+}
+
+.nav-customized {
+/*	border-bottom: 1px solid #EEEEEE;*/
+    box-shadow: 0 0 1px 0 grey;
+	
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: transparent !important;
+	color: #5b9aec;
+	border-radius: inherit;
+	border-bottom: 1px solid;
+}
+
+.tab-content {
+/*	padding-left: 1%;*/
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+  /* BOT CONTAINER */
+
+.bot-container {
+	padding-left: 2%;
+}
+
+.bot-container h4 {
+	margin-top: 0;
+	padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.page-inner-container {
+	border: 1px solid #EEEEEE;
+	box-shadow: 0 0 1px 0 grey;
+	width: 98%;
+	height: 46em;
+	padding: 0;
+}
+
+.bot-index {
+	height: 100%;
+	width: 13%;
+    padding: 2%;
+	border-right: 1px solid #ccc;
+	background: #fff;
+}
+
+.bot-index ul {
+	list-style: none;
+	padding: 0;
+}
+
+.bot-index ul li {
+	padding-top: 1em;
+}
+
+.all-bots, .categories, .channels {
+	padding-top: 10%;
+}
+
+.bot-main_container h6 {
+	padding: 0 0 0 15%;
+	margin: 1.5% 0 1.5% 0;
+}
+
+.box {
+	border: 1px solid #ccc;
+    border-radius: 8%;
+    margin-left: 2%;
+    width: 16%;
+    height: 18em;
+    background: #fff;
+}
+
+.circle {
+	border: 1px solid #ccc;
+    margin: 20% 20% 5% 23%; 
+    width: 52%;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.bot-main_container .box h6{
+	margin: 0 22% 6%;
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Digitamize</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+        <!-- Custom styles for this template -->
+        <link href="stylesheet/stylesheet.css" rel="stylesheet">
+        
+        <!-- FontAwesome Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Script for including HTML files   -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        
+        
+	</head>
+	<body>
+	<div class="main-container">
+		<!-- Sidebar -->
+		<div w3-include-html="parts/sidebar.html"></div>
+       
+        <!-- Nav Header -->
+        <div w3-include-html="parts/header.html"></div>
+        
+        <!-- Main Page -->
+        <div id="content"></div>
+        
+        <!-- Speedbot Sidebar -->
+        <div class="row speed-bot">
+        	<a href="#" class="show_hide">Talk to Speed</a>
+        
+            <div class="slidingDiv">
+               <i class="fa fa-repeat fa-lg speed-bot_icons col-sm-offset-8" aria-hidden="true"></i>
+               <i class="fa fa-expand fa-lg speed-bot_icons" aria-hidden="true"></i>
+               <i class="fa fa-arrow-circle-right fa-lg toggle_hide" aria-hidden="true"></i>
+               <div class="chat-space">
+               	  <i class="fa fa-smile-o fa-lg chat-space_emoji" aria-hidden="true"></i>
+               	  <span class="chat-space_text">Enter Text</span>
+               	  <i class="fa fa-arrow-circle-right fa-lg chat-space_right-arrow toggle_hide" aria-hidden="true"></i>
+               </div>
+            </div>     
+        </div>
+        
+     </div>  
+       
+
+<script>
+   w3.includeHTML();
+</script>
+
+<script>
+	$(document).ready(function () {
+
+        $(".slidingDiv").hide();
+        $(".show_hide").show();
+
+        $('.show_hide').click(function () {
+            $(".slidingDiv").toggle("slide");
+        });
+	
+	    $('.toggle_hide').click(function () {
+            $(".slidingDiv").toggle("slide");
+		    $('.bg-img').animate({width: '100%'},"slow");
+		    $('.nav-header').animate({width: '95%'});
+            $('.speed-container').animate({width: '100%'});
+        });
+		
+   });
+</script>
+<script>
+	/* On click div adjustments */
+	$('.show_hide').on('click', function() {
+      $(this).toggleClass('clicked');
+	  $('.nav-header').animate({width: '76%'});
+	  $('.bg-img').animate({width: '81%'});
+	  $('.speed-container').animate({width: '76%'});
+   });
+</script>
+
+
+<script>
+	function load_home() {
+            $('#content').load( 'parts/home-page.html' );
+		    $('.nav-header').hide();
+	}
+	function load_speed() {
+            $('#content').load( 'parts/speed.html' );
+		$('.nav-header').show();
+	}
+	function load_bot() {
+            $('#content').load( 'parts/bot.html' );
+		$('.nav-header').show();
+	}
+	
+</script>
+
+
+	</body>
+</html>
